@@ -18,6 +18,7 @@ jobs:
 
       - name: Criar arquivo com informações
         run: |
+          cd pages
           echo "👋 Este push foi feito por: ${{ github.actor }}" > index.html
           echo "📅 Data: $(date)" >> index.html
           echo "🔗 Commit: ${{ github.sha }}" >> index.html
